@@ -1,0 +1,40 @@
+.row{
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 16px;
+    width: 100%;
+    /*color-interpolation-filters: auto;*/
+    margin-top: 20px;
+    position: center;
+    overflow: auto;
+}
+.row h1{
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1) ;
+    background-attachment: fixed;
+    color: black;
+    margin: 30px auto;
+    font-weight: bold;
+    font-family: "Tahoma";
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+.row img{
+
+
+    box-shadow: 0 3px 1rem rgba(0,0,0,.2) ;
+    border-radius: 300px;
+    object-fit: cover;
+    width: 40%;
+    height: 40%;
+
+
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}

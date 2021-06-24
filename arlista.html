@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Árlista</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='pages.css?version=45'>
+</head>
+<body>
+<div class="headerimg">
+<div class="headertext">
+  <h1 style="font-size: 40px">Határok Nélkül Fordító Iroda</h1>
+</div>
+</div>
+<div class="navbar" id="myHeader">
+
+  <a href="index.html" id="home">Kezdőlap</a>
+  <a href="forditas-lektoralas.html" id="translate">Fordítás - Rektorálás</a>
+  <a class="active" href="arlista.html" id="prices">Árlista</a>
+  <a href="referencia.html" id="reference">Referencia</a>
+  <a href="about.html" id="about">Rólunk</a>
+  <a href="munkalehetoseg.html" id="carrier">Munkalehetőség</a>
+
+</div>
+
+<div id="content">
+  <div id="text">
+      <div><h1 style="float:left; margin-left: 10%; color: #0f3e56;">Árlista</h1></div>
+      <table style="width: 80%; text-align: left; margin-left: 10%; margin-top: 10%; font-size: 18px"><tbody><tr><td><strong>Normál szöveg</strong></td><td><strong>Normál határidő</strong></td></tr><tr><td>Angolról magyarra</td><td><em>2&nbsp;</em>Ft / karakter</td></tr><tr><td>Németről magyarra</td><td>2 Ft / karakter</td></tr><tr><td>Magyarról angolra, németre</td><td>2 Ft / karakter</td></tr><tr><td>Egyéb európai idegen nyelvről magyarra</td><td>2,2-3,4 Ft / karakter</td></tr><tr><td>Magyarról egyéb európai idegen nyelvre</td><td>2,4-3,8 Ft / karakter</td></tr><tr><td>(egyéb v. minden más) Idegen nyelvről magyarra</td><td>2,5-6,5 Ft / karkter</td></tr><tr><td>Magyarról (egyéb v. minden más) idegen nyelvre</td><td>2,7-7,1 Ft / karakter</td></tr><tr><td>Idegen nyelvről idegen nyelvre</td><td>3,5 Ft / karakter</td></tr><tr><td>Lektorálási felár</td><td>50 %</td></tr><tr><td>Sürgősségi és szakmai felár</td><td>40 %</td></tr><tr><td>Azonnali felár</td><td>90 %</td></tr><tr><td>Fordítás hang- vagy képi hordozóról, minőségtől függően</td><td>50-100 %</td></tr><tr><td>Nehezen olvasható szöveg vagy kézírás</td><td>10 %</td></tr><tr><td>Pontos oldaltükör, PowerPoint</td><td>10 %</td></tr><tr><td>Kiadványok szerkesztése</td><td>egyedi árajánlat</td></tr><tr><td>Nyomdai munkálatok</td><td>egyedi árajánlat</td></tr><tr><td>50-100 oldal terjedelem esetén</td><td>5 %</td></tr><tr><td>100 oldal terjedelemtől </td><td>10 %</td></tr></tbody></table>
+      <p style="color: #0f3e56">Fantasztikus ajánlatunk első megrendeléskor: Első 3 oldal ingyen vagy 10 % kedvezmény (min. 10 oldal megrendelése esetén)</p><p><br>&#8211; Elszámolás: karakterenként, a forrásnyelv karakterszáma alapján<br>&#8211; Normál határidő: 5 napos teljesítés esetén (kb. 50 oldal)<br>&#8211; Minimum fordítási díj: 5000 Ft nyelvenként<br>&#8211; Fordítás hitelesíttetése a mindenkori OFFI díjszabás függvényében </p>
+      <p><em>Az árak az áfát nem tartalmazzák.</em></p>
+      <a style="font-size: 20px;text-decoration: none; color: #54545c; border-bottom: solid black 1px; mso-border-shadow: yes"href="files/Forditas_Megrendelo_HU-1.doc">Megrendelő Lap</a>
+
+
+  </div>
+</div>
+
+<script>
+    window.onscroll = function() {Scroll()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function Scroll() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+</script>
+<div class="footer-dark">
+    <footer class="footer-dark">
+        <div class="container">
+            <a href="aszf.html">Á.Sz.F |</a>
+            <a href="elerhetoseg.html"> Elérhetőség</a>
+            <p class="copyright">Határok Nélkül Fordító Iroda © 2009 - Minden Jog Fenntartva!</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

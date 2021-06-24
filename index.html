@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Határok Nélkül Fordító Iroda</title>
+    <link rel="stylesheet" href='startpage.css?version=45'>
+    <script type="text/javascript" src="calc.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+<!--<div class="headerimg"></div>
+<div class="headertext">
+    <h1>Határok Nélkül Fordító Iroda</h1>
+</div>
+<div class="titlebg"><div id="titletext"><h1>Minőség és megbízhatóság: Határok Nélkül</h1></div></div>-->
+<div class="headervid">
+
+
+        <video autoplay muted loop id="myVideo">
+            <source src="files/flags.mp4" type="video/mp4" alt="">
+        </video>
+
+
+
+    <div style="effect: blur(50%)" class="video_overlays">
+
+        <li><strong>Profeszionális fordítás és rektorálás szakemberek által</strong></li><br>
+        <li><strong>Fordítás 0-24</strong></li><br>
+        <li><strong>Több mint 40 nyelven, minőség és határidő garanciával</strong></li><br>
+        <li><strong>Garantált  kedvezmény az első megrendelésre</strong></li><br>
+        <li><strong>Árajánlat 1 órán belül</strong></li><br>
+        <li><strong>EU-s projektek</strong></li><br>
+        <li><strong>20 éves megbízhatóság</strong></li><br>
+
+
+    </div>
+
+    <div style="z-index: 9999;" class="navbar" id="navbar">
+
+        <!--<a href="arlista.html" id="prices"><strong>Árlista</strong></a>-->
+
+        <a href="elerhetoseg.html" id="">Kapcsolat</a>
+        <a href="munkalehetoseg.html" id="carrier"  >Karrier </a>
+        <a href="referencia.html" id="reference"  >Referencia</strong></a>
+        <a href="forditas-lektoralas.html" id="translate"  >Szolgáltatások</a>
+        <a href="about.html" id="about"  >Rólunk</a>
+
+    </div>
+</div>
+
+
+
+<div id="content">
+    <!--<div id="text">
+    <h1 style="font-family: 'trebuchet MS'">Üdvözöljük!</h1>
+    <p>Irodánk a megrendelő igényeihez igazodva, megbízhatóan végzi szolgáltatásait, cégeknek, és magánszemélyeknek egyaránt.
+    Munkatársaink jelentős kiemelkedő szakmai tudással, és jelentős tapasztalattal rendelkeznek, így Önnek garantáltan a legjobb minőséget tudjuk nyújtani! </p>
+        <h1 style="color: #0f3e56; font-family: 'trebuchet MS'">Haszálja Díjkalkulátorunkat és kérjen árajánlatot! </h1>
+    </div>-->
+    <div id="calculator">
+        <h1 style="color: #312d2d; font-family: 'Trebuchet MS'">Díjkalkulátor</h1>
+            <select name="lang1" id="lang1" required>
+                <option value="error1" >Fordítandó dokumentum nyelve</option>
+                <option value="hun">Magyar</option>
+                <option value="en">Angol</option>
+                <option value="de">Német</option>
+                <option value="fr">Francia</option>
+                <option value="sq">Albán</option>
+                <option value="am">Amahra</option>
+                <option value="ar">Arab</option>
+                <option value="bn">Bengáli</option>
+                <option value="bg">Bolgár</option>
+                <option value="bs">Bosnyák</option>
+                <option value="cs">Cseh</option>
+                <option value="da">Dán</option>
+                <option value="fi">Finn</option>
+                <option value="ka">Grúz</option>
+                <option value="el">Görög</option>
+                <option value="nl">Holland</option>
+                <option value="hr">Horvát</option>
+                <option value="he">Héber</option>
+                <option value="id">Indonéz</option>
+                <option value="is">Izlandi</option>
+                <option value="ja">Japán</option>
+                <option value="ca">Katalán</option>
+                <option value="kk">Kazah</option>
+                <option value="ko">Koreai</option>
+                <option value="zh">Kínai</option>
+                <option value="la">Latin</option>
+                <option value="pl">Lengyel</option>
+                <option value="lv">Lett</option>
+                <option value="lt">Litván</option>
+                <option value="rom">Lovári</option>
+                <option value="mc">Macedón</option>
+                <option value="ml">Maláj</option>
+                <option value="ne">Nepáli</option>
+                <option value="nn">Norvég</option>
+                <option value="it">Olasz</option>
+                <option value="ru">Orosz</option>
+                <option value="fa">Perzsa</option>
+                <option value="pt">Portugál</option>
+                <option value="ro">Román</option>
+                <option value="es">Spanyol</option>
+                <option value="sv">Svéd</option>
+                <option value="sr">Szerb</option>
+                <option value="sk">Szlovák</option>
+                <option value="sl">Szlovén</option>
+                <option value="tr">Török</option>
+                <option value="uk">Ukrán</option>
+                <option value="ur">Urdu</option>
+                <option value="vi">Vietnámi</option>
+                <option value="et">Észt</option>
+                <option value="hy">Örmény</option>
+                <option value="uz">Üzbég</option>
+            </select>
+
+                <select name="lang2" id="lang2">
+                    <option value="error2">Fordítás nyelve</option>
+                    <option value="hun">Magyar</option>
+                    <option value="base">Angol</option>
+                    <option value="base">Német</option>
+                    <option value="fr">Francia</option>
+                    <option value="sq">Albán</option>
+                    <option value="am">Amahra</option>
+                    <option value="ar">Arab</option>
+                    <option value="bn">Bengáli</option>
+                    <option value="bg">Bolgár</option>
+                    <option value="bs">Bosnyák</option>
+                    <option value="cs">Cseh</option>
+                    <option value="da">Dán</option>
+                    <option value="fi">Finn</option>
+                    <option value="ka">Grúz</option>
+                    <option value="el">Görög</option>
+                    <option value="nl">Holland</option>
+                    <option value="hr">Horvát</option>
+                    <option value="he">Héber</option>
+                    <option value="id">Indonéz</option>
+                    <option value="is">Izlandi</option>
+                    <option value="ja">Japán</option>
+                    <option value="ca">Katalán</option>
+                    <option value="kk">Kazah</option>
+                    <option value="ko">Koreai</option>
+                    <option value="zh">Kínai</option>
+                    <option value="la">Latin</option>
+                    <option value="pl">Lengyel</option>
+                    <option value="lv">Lett</option>
+                    <option value="lt">Litván</option>
+                    <option value="rom">Lovári</option>
+                    <option value="mc">Macedón</option>
+                    <option value="ml">Maláj</option>
+                    <option value="ne">Nepáli</option>
+                    <option value="nn">Norvég</option>
+                    <option value="it">Olasz</option>
+                    <option value="ru">Orosz</option>
+                    <option value="fa">Perzsa</option>
+                    <option value="pt">Portugál</option>
+                    <option value="ro">Román</option>
+                    <option value="es">Spanyol</option>
+                    <option value="sv">Svéd</option>
+                    <option value="sr">Szerb</option>
+                    <option value="sk">Szlovák</option>
+                    <option value="sl">Szlovén</option>
+                    <option value="tr">Török</option>
+                    <option value="uk">Ukrán</option>
+                    <option value="ur">Urdu</option>
+                    <option value="vi">Vietnámi</option>
+                    <option value="et">Észt</option>
+                    <option value="hy">Örmény</option>
+                    <option value="uz">Üzbég</option>
+                </select>
+        <br>
+                    <label for="charnum" style=";color: #000000; padding-left: 10px; padding-right: 10px;border-radius: 16px; width: auto">Fordítandó dokumentum karakterszáma:</label>
+                    <input type="number"id="charnum" name="charnum" min="1" required><br>
+        <br>
+
+                    <select name="doctype" id="doctype">
+                        <option value="">Dokumentum típusa</option>
+                        <option value="recorpic">Fordítás hang- vagy képi hordozóról</option>
+                        <option value="handwriting">Nehezen olvasható szöveg vagy kézírás</option>
+                        <option value="mirror">Pontos oldaltükör</option>
+                        <option value="ppt">Power Point</option>
+                    </select>
+
+            <select name="special" id="special">
+                <option value="">Extra szolgáltatások</option>
+                <option value="urgent">Sürgősségi vagy szakmai fordítás</option>
+                <option value="lektor">Lektorálás</option>
+                <option value="instant">Azonnali fordítás</option>
+            </select>
+
+            <button style=" color: black; height: 20%; font-size: 17px;border-radius: 16px; width: 30%" type="submit" onclick="calc()">Számítás</button>
+
+        <p id="finalresult"> </p>
+        <p id="info"> </p>
+        <a id="arajanlat" href="elerhetoseg.html" style="color: black; margin-bottom: 10px; font-size: 25px"> Árajánlatot kérek! </a>
+
+
+    </div>
+
+<div class="row">
+    <h1 style="color: #312d2d; font-family: 'Trebuchet MS'">Referenciák</h1>
+    <div class="column">
+        <div class="slide" id="slideshow3">
+            <div>
+                <img src="files/1.jpg">
+            </div>
+            <div>
+                <img src="files/2.jpg">
+            </div>
+            <div>
+                <img src="files/3.png">
+            </div>
+            <div>
+                <img src="files/4.jpg">
+            </div>
+            <div>
+                <img src="files/5.jpg">
+            </div>
+            <div>
+                <img src="files/6.png">
+            </div>
+            <div>
+                <img src="files/7.jpg">
+            </div>
+            <div>
+                <img src="files/8.jpg">
+            </div>
+        </div>
+    </div>
+        <div class="column">
+            <div class="slide" id="slideshow2">
+                <div>
+                    <img src="files/9.jpg">
+                </div>
+                <div>
+                    <img src="files/10.jpg">
+                </div>
+                <div>
+                    <img src="files/11.jpg">
+                </div>
+                <div>
+                    <img src="files/12.jpg">
+                </div>
+                <div>
+                    <img src="files/13.jpg">
+                </div>
+                <div>
+                    <img src="files/14.jpg">
+                </div>
+                <div>
+                    <img src="files/15.png">
+                </div>
+                <div>
+                    <img src="files/16.jpg">
+                </div>
+            </div>
+        </div>
+            <div class="column">
+                <div class="slide" id="slideshow">
+                    <div>
+                        <img src="files/17.png">
+                    </div>
+                    <div>
+                        <img src="files/18.png">
+                    </div>
+                    <div>
+                        <img src="files/19.jpg">
+                    </div>
+                    <div>
+                        <img src="files/20.png">
+                    </div>
+                    <div>
+                        <img src="files/21.jpg">
+                    </div>
+                    <div>
+                        <img src="files/22.png">
+                    </div>
+                    <div>
+                        <img src="files/23.jpg">
+                    </div>
+                    <div>
+                        <img src="files/24.jpg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    <div  style="font-size: 20px" class="row">
+        <h1 style="color: #312d2d; font-family: 'Trebuchet MS'">Projektjeink</h1>
+
+        <div class="column2">
+            <div class="slide"></div>
+            <div>
+                <img style="width: 250px ; height: 250px" src="files/7.jpg">
+            </div>
+            <div><p><strong>Green tour oktatási anyag</strong><br><br>      Egy Innovatív útvonal desztinációfejlesztéshez projekt és tananyagfejlesztéshez fordítás, lektorálás több ezer oldal, öt nyelven. Portugál, Bulgár, Olasz, Angol, és magyar nyelvre európai nyelvekről.</p></div>
+        </div>
+        <div class="column2">
+            <div class="slide" ></div>
+            <div>
+                <img style="width: 250px; height: 250px" src="files/eco.png">
+            </div>
+            <div><p><strong>ECO-SCHOOL</strong><br><br> Oktatási hálózat az öko-tudatos, fenntartható életért tananyag fordítás. A Határok Nélkül Iroda mind partnerként, mind koordinátorként hazai és nemzetközi projekteketben vállal fordítást. Közreműködött a Leonardo da Vinci program keretein belül magas színvonalú, az új EU-s országok gazdasági felzárkóztatását is elősegítő tananyagok fordításában.</p></div>
+        </div>
+        <div class="column2">
+
+            <div class="slide" ></div>
+            <div>
+                <img style="width: 250px; height: 250px" src="files/11.jpg">
+            </div>
+            <div><p><strong>INSIGHT</strong><br><br>Az “Új Munkavállalói Képességek Megszerzésére és Foglalkoztatottsági Alkalmasság Növelésére Irányuló Egyéni Képzés” Az INSIGHT projekt megvalósítása során fordítást, lektorálást végeztünk hat nyelvre!</p></div>
+        </div>
+        <div class="column2">
+            <div class="slide" ></div>
+            <div>
+                <img style="width: 250px; height: 250px" src="files/6.png">
+            </div>
+            <div><p><strong>4 LÉPÉS A FOGALALKOZTATÁSÉRT</strong><br><br>A 4 STEP projekt 2016-ban kezdődött Törökország, Spanyolország, Egyesült Királyság és Magyarország részvételével, a projekt során ezen országok nyelvére fordítottunk.</p></div>
+        </div>
+
+
+
+
+
+    </div>
+    </div>
+</div>
+<script>
+    $( document ).ready(function() {
+    $("#slideshow > div:gt(0)").hide();
+
+    $("#slideshow2 > div:gt(0)").hide();
+
+
+    $("#slideshow3 > div:gt(0)").hide();
+
+    setInterval(function() {
+    $('#slideshow > div:first')
+        .fadeOut(1)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+
+    $('#slideshow2 > div:first')
+        .fadeOut(1)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow2');
+    $('#slideshow3 > div:first')
+        .fadeOut(1)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow3');
+
+    }, 3000);
+    });
+</script>
+<script>
+    $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            if (scroll > 1000) {
+                $(".navbar").css("width" , "100%");
+                $(".navbar").css("top" , "0");
+                $(".navbar").css("background-color" , "white");
+                $(".navbar a").css("background-color" , "unset");
+                $(".navbar a").css("color" , "black");
+                $(".navbar a").css("font-weight" , "unset");
+                $(".navbar a").css("text-align" , "center");
+                $(".navbar").css("overflow" , "auto");
+                $(".navbar").css("right" , "unset");
+                $(".navbar").css("margin" , "0 auto");
+                $(".navbar").css("border-bottom" , "1px white");
+                $(".navbar").css("border-radius" , "");
+                $(".navbar a").css("padding" , "3px");
+                $(".navbar").css("box-shadow" , "0 3px 1rem rgba(0,0,0,.1)");
+            }
+
+            else{
+                $(".navbar a").css("border-radius" , "90px");
+                $(".navbar a").css("color" , "whitesmoke");
+                $(".navbar a").css("background-color" , " rgba(130,230,250,0.4)");
+                $(".navbar").css("background-color" , "unset");
+                $(".navbar a").css("padding" , "5px");
+                $(".navbar a").css("font-weight" , "bold");
+                $(".navbar").css("margin" , "5px");
+                $(".navbar").css("float" , "right");
+                $(".navbar").css("right" , "19%");
+                $(".navbar").css("box-shadow" , "");
+
+            }
+        })
+
+
+</script>
+
+
+<div class="footer-dark">
+
+        <footer class="footer-dark">
+            <div class="footer-row">
+                <div class="footer-column" >
+                    <h2>Rólunk</h2>
+                    <p style=" text-align: left">Irodánk a megrendelő igényeihez igazodva, megbízhatóan végzi szolgáltatásait, cégeknek, és magánszemélyeknek egyaránt.
+                        Munkatársaink jelentős kiemelkedő szakmai tudással, és jelentős tapasztalattal rendelkeznek, így Önnek garantáltan a legjobb minőséget tudjuk nyújtani! </p>
+                </div>
+                <div class="footer-column" >
+                    <h2>Központi elérhetőség</h2>
+
+                    <p style=" text-align: center ">1118 Budapest Köbölkút utca 12.<br>Telefon: + 36 1 422 0554<br>Mobil: +36 70 630 3604, + 36 70 385 5681<br>E-mail:&nbsp;<a href="mailto:fordito@hataroknelkul.hu" style="font-size: 17px">fordito@hataroknelkul.hu</a><br>www.forditoiroda.com</p>
+
+                </div>
+                <div class="footer-column">
+                    <h2><a href="aszf.html">Á.Sz.F</a></h2>
+                </div>
+            </div>
+                <div>
+                    <p class="copyright" style="font-size: 15px">Határok Nélkül Fordító Iroda © 2009 - Minden Jog Fenntartva!</p>
+                </div>
+        </footer>
+
+
+
+
+</div>
+</body>
+</html>

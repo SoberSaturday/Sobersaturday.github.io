@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Rólunk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href='pages.css?version=45'>
+    <link rel="stylesheet" href='about.css?version=45'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div style="z-index: 9999;" class="navbar" id="navbar">
+
+    <!--<a href="arlista.html" id="prices"><strong>Árlista</strong></a>-->
+
+    <a href="elerhetoseg.html" id="">Kapcsolat</a>
+    <a href="munkalehetoseg.html" id="carrier"  >Karrier </a>
+    <a href="referencia.html" id="reference"  >Referencia</strong></a>
+    <a href="forditas-lektoralas.html" id="translate"  >Szolgáltatások</a>
+    <a href="about.html" id="about"  >Rólunk</a>
+    <a id="icon" href="index.html"><i class="fa fa-home"></i></a>
+
+</div>
+
+<div id="content">
+  <div id="text">
+
+      <div><h1 style="float:left; margin-left: 10%; color: #0f3e56;">Rólunk</h1></div>
+      <div class="row">
+          <div class="column">
+              <img src="files/zsombor.jpg">
+
+          </div>
+          <div class="column">
+              <img src="files/gyork.jpg"  >
+          </div>
+
+          <div class="row">
+          <div class="column">
+
+              <h1>Eőry Zsombor</h1>
+              <p>A nevem Eőry Zsombor. A Budapesti Műszaki és Gazdaságtudományi Egyetemen végeztem Gazdálkodási és menedzsment szakon.<br> Önkéntes tapasztalattal rendelkeztem Portugáliában és Törökországban, ahol a fenntartható fejlődésről és az újrafeldolgozható műanyagokból készült 3D nyomtatásról tanultam.<br> Motivált és fegyelmezett ember vagyok, ezért nagyon fontosnak tartom a szakfordítások legjobb minőségét.</p>
+
+
+          </div>
+          <div class="column">
+              <h1>Halász Györk</h1>
+              <p>A nevem Halász Györk. Környezetvédelmi mérnök vagyok és 25 éves projektmenedzseri tapasztalattal rendelkezem.<br> Erasmus + felnőtt tanulási nemzetközi projekteket viszek Olaszországban, Nagy-Britanniában, Franciaországban és Magyarországon. Rengeteg fordítási, lektorálásai munkával jár ez a folyamat.<br> Mindig az aktuális projekteken szeretek a legjobban dolgozni. A projektek során rengeteget utazom és nagyon sok emberrel találkozom.<br> Minden együttműködés különböző, teljesen más ország, más mentalitás, de a folyamatos változatosság teszi izgalmassá ezt a szakmát.</p>
+
+          </div>
+      </div>
+      </div>
+  </div>
+</div>
+
+<script>
+    window.onscroll = function() {Scroll()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function Scroll() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+</script>
+<div class="footer-dark">
+
+    <footer class="footer-dark">
+        <div class="footer-row">
+            <div class="footer-column" >
+                <h2>Rólunk</h2>
+                <p style=" text-align: left ">Irodánk a megrendelő igényeihez igazodva, megbízhatóan végzi szolgáltatásait, cégeknek, és magánszemélyeknek egyaránt.
+                    Munkatársaink jelentős kiemelkedő szakmai tudással, és jelentős tapasztalattal rendelkeznek, így Önnek garantáltan a legjobb minőséget tudjuk nyújtani! </p>
+            </div>
+            <div class="footer-column" >
+                <h2>Központi elérhetőség</h2>
+
+                <p style=" text-align: center ">1118 Budapest Köbölkút utca 12.<br>Telefon: + 36 1 422 0554<br>Mobil: +36 70 630 3604, + 36 70 385 5681<br>E-mail:&nbsp;<a href="mailto:fordito@hataroknelkul.hu" style="font-size: 17px">fordito@hataroknelkul.hu</a><br>www.forditoiroda.com</p>
+
+            </div>
+            <div class="footer-column">
+                <h2><a href="aszf.html">Á.Sz.F</a></h2>
+            </div>
+        </div>
+        <div>
+            <p class="copyright" style="font-size: 15px">Határok Nélkül Fordító Iroda © 2009 - Minden Jog Fenntartva!</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

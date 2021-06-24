@@ -1,0 +1,375 @@
+* {box-sizing: border-box}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.column2{
+    float: left;
+    width:50%;
+    height: 320px;
+    padding: 5px;
+    margin: 25px auto;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    object-fit: cover;
+}
+.column2 img{
+    width: 30%;
+    margin: 3px auto;
+    padding: 5px;
+}
+
+.row img{
+
+    float: left;
+    width: 100%;
+    object-fit: cover;
+
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+#slideshow {
+    margin: 25px auto;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+#slideshow2 {
+    margin: 25px auto;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+#slideshow3 {
+    margin: 25px auto;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+#myVideo {
+    position: relative;
+    width: 100%;
+}
+
+.video_overlays {
+    position:absolute;
+    z-index:3000;
+    top:0;
+    margin-top: 16%;
+    padding: 5px;
+    left: 2%;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+}
+.video_overlays li{
+
+    color: #ffffff;
+    -webkit-text-stroke: 1px black;
+    position: relative;
+    backdrop-filter: blur(5px);
+    font-size:34px;
+    border-radius: 25px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 3px;
+    overflow: hidden;
+    float: right;
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Trebuchet MS";
+}
+.content {
+    padding: 16px;
+}
+
+
+
+.navbar {
+
+
+    position: fixed;
+    top:0;
+    right: 19%;
+    margin: 0 auto;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+
+.navbar a {
+    z-index:50000;
+    background-color:  rgba(130,230,250,0.4);
+    border-radius: 90px;
+    color: whitesmoke;
+    border:1px solid white;
+    backdrop-filter: blur(10px);
+    font-family: "Trebuchet MS";
+    font-size:20px;
+    padding: 7px;
+    margin: 5px;
+    float: right;
+    font-weight: bold;
+   /* color: #35383d;*/
+    text-decoration: none;
+    width: 12%;
+    text-align: center;
+}
+
+.navbar a:hover {
+    opacity: 85%;
+}
+
+.navbar a.active {
+    background-color: #2a647f;
+}
+
+
+#content{
+    padding: 2%;
+    width: 100%;
+    text-align: center;
+    background-image:#f2b969;background-image:
+        radial-gradient(at 71% 5%, hsla(56,90%,72%,1) 0, transparent 48%),
+        radial-gradient(at 68% 68%, hsla(97,60%,66%,1) 0, transparent 50%),
+        radial-gradient(at 84% 58%, hsla(96,73%,60%,1) 0, transparent 42%),
+        radial-gradient(at 92% 51%, hsla(301,68%,72%,1) 0, transparent 51%),
+        radial-gradient(at 27% 9%, hsla(206,62%,56%,1) 0, transparent 58%),
+        radial-gradient(at 51% 11%, hsla(314,64%,63%,1) 0, transparent 46%),
+        radial-gradient(at 74% 4%, hsla(332,64%,61%,1) 0, transparent 47%);
+}
+#text{
+    font-size: 22px;
+    line-height:1.8 ;
+    border-radius: 16px;
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+    position: center;
+    padding-top: 40px;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.5) ;
+    overflow: auto;
+}
+#text p{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: "Trebuchet MS";
+
+}
+
+#calculator a:hover {
+    opacity:0.8;
+}
+#calculator button:hover {
+    opacity:0.9;
+}
+#calculator, .row{
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 16px;
+    width: 80%;
+    /*color-interpolation-filters: auto;*/
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(2px) ;
+    margin-top: 20px;
+    margin-left: 10%;
+    position: center;
+    box-shadow: 0 3px 1rem rgba(255, 255, 255, 0.8);
+    overflow: auto;
+}
+#calculator h1 , .row h1{
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1) ;
+    background-attachment: fixed;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    font-family: "Trebuchet MS";
+}
+#calculator input, select, label, button{
+    font-size: 17px;
+    padding: 10px;
+    width: 40%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: "Trebuchet MS";
+    border: 2px solid #aabcc7;
+    border-radius: 4px;
+    backdrop-filter: blur(2px);
+
+}
+#titletext{
+    font-size:1vw;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1) ;
+    background-color: #95cbe6 ;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Trebuchet MS";;
+    border: 3px solid #ffffff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 45%;
+    padding: 20px;
+    text-align: center;
+}
+.footer-dark a{
+
+    text-decoration: none;
+    font-size: 20px;
+    color:inherit;
+    opacity:0.6;
+}
+.footer-dark {
+    width: 100%;
+    padding:13px 0;
+    color: #5f5f5f;
+    background-color: #ffffff;
+    text-align: center;
+    bottom: 0px;
+}
+.footer-dark .copyright {
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+}
+.footer-dark a:hover {
+    opacity:0.8;
+}
+.footer-dark h2 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:20px;
+    color: inherit;
+}
+/*
+.footer-dark p {
+    font-size: 17px;
+    color: inherit;
+    width: 40%;
+    margin-left: 33.3%;
+
+}*/
+
+.footer-column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.footer-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 767px) {
+
+
+    .footer-dark h2, p{
+        font-size: 15px;
+
+    }
+    .video_overlays{
+        display: none;
+    }
+    .navbar a{
+        width: 50%;
+        font-size: 15px;
+    }
+    .navbar{
+        position: absolute !important;
+    }
+    #content{
+        font-size: 15px!important;
+    }
+    #content h1{
+        font-size: 20px;
+    }
+    #text{
+        width: 100%!important;
+    }
+    #text p, a, li, td{
+        font-size: 15px !important;
+    }
+    #calculator{
+        width: 100%!important;
+        margin-left: 0px!important;
+        margin-top: 10px!important;
+    }
+
+    .row{
+        width: 100%;
+        margin: 15px auto!important;
+    }
+    .column{
+        width:33.3%;
+        margin:0 auto;
+    }
+    .slide{
+        height: 125px!important;
+        width: 125px!important;
+        margin: 1px auto;
+        box-shadow: unset!important;
+
+        padding: unset!important;
+    }
+    .slide img{
+        height: 125px!important;
+        width: 125px!important;
+
+    }
+    .column2 img{
+        height: 200px!important;
+        width: 200px!important;
+       float: none !important;
+        padding: unset;
+        margin: unset;
+
+    }
+   .column2{
+       width: 100% !important;
+       height: unset !important;
+       font-size: 15px!important;
+   }
+   .column2 p{
+       float: left;  }
+}
