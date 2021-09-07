@@ -29,8 +29,10 @@ function calc(){
             break;
         case "lektor":
             extra2 = 1.5;
+            break;
         case "instant":
             extra2 = 1.9;
+            break;
     }
     
     
@@ -54,11 +56,13 @@ function calc(){
         case "en":
         case "de"
             lang1 = "base";
+            break;
     }
     switch(lang2){
         case "en":
         case "de"
             lang2 = "base";
+            break;
     }
     
     if(lang1 === "hun" && lang2 === "base" ){
