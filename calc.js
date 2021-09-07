@@ -40,27 +40,28 @@ function calc(){
         alert("Válassza ki fordítandó dokumentum nyelvét!");
         return;
     }
-    else if(lang2 ==="error2"){
+    if(lang2 ==="error2"){
         alert("Válassza ki milyen nyelvre szeretné fordítani a dokumentumot!");
         return;
     }
-    else if(lang1 === lang2){
+    if(lang1 === lang2){
        alert("A választott nyelvek megegyeznek, kérjük próbálja újra");
        return;
     }
-    else if(charnum == 0){
+    if(charnum == 0){
         alert("A számításhoz írja be a dokumentum karakterszámát!");
         return;
     }
+    
     switch(lang1){
         case "en":
-        case "de"
+        case "de":
             lang1 = "base";
             break;
     }
     switch(lang2){
         case "en":
-        case "de"
+        case "de":
             lang2 = "base";
             break;
     }
