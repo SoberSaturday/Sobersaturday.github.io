@@ -8,7 +8,31 @@ function calc(){
     var ft = " Ft"
     var info = "A kalkulátor megközelítő értéket ad! Vegye fel velünk a kapcsolatot, és kérjen pontos árajánlatot!"
     var arajanlat = "Árajánlatot kérek!"
+    var charprice = 1;
 
+    
+     switch (doctype){
+        case "recorpic":
+            charprice = 1.75;
+            break;
+        case "mirror":
+        case "handwriting":
+        case "ppt":
+            charprice = 1.10;
+            break;
+    }
+
+    switch(special){
+        case "urgent":
+            charprice = 1.4;
+            break;
+        case "lektor":
+            charprice = 1.5;
+        case "instant":
+            charprice = 1.9;
+    }
+    
+    
     if(lang1 ==="error1"){
         alert("Válassza ki fordítandó dokumentum nyelvét!");
         return;
@@ -26,21 +50,21 @@ function calc(){
         return;
     }
     if(lang1==="hun" && lang2==="base"){
-        result += charnum*2;
+        result += charnum* (2*charprice);
     }
     if(lang1 === "base" && lang2 === "hun" ){
-        result += charnum * 2;
+        result += charnum * (2*charprice);
     }
     if(lang1 === "hun" && lang2 !== "base" ){
-        result += charnum * 3.5;
+        result += charnum * (3.5*charprice);
     }
     if(lang1 !== "base" && lang2 === "hun" ){
-        result += charnum * 3.5;
+        result += charnum * (3.5*charprice);
     }
     if(lang1 !== "hun" && lang2 !== "hun" ){
-        result += charnum * 4;
+        result += charnum * (4*charprice);
     }
-
+/*
     switch (doctype){
         case "recorpic":
             result *= 1.75;
@@ -61,7 +85,7 @@ function calc(){
         case "instant":
             result *= 1.9;
     }
-
+*/
     document.getElementById("finalresult").innerHTML = Math.round(result) + ft;
     document.getElementById("info").innerHTML = info;
     document.getElementById("arajanlat").innerHTML = arajanlat ;
