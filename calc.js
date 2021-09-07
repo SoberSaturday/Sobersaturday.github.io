@@ -8,30 +8,30 @@ function calc(){
     var ft = " Ft"
     var info = "A kalkulátor megközelítő értéket ad! Vegye fel velünk a kapcsolatot, és kérjen pontos árajánlatot!"
     var arajanlat = "Árajánlatot kérek!"
-    var charpriceA = 1;
-    var charpriceB = 1;
+    var charpriceA = 1
+    var charpriceB = 1
 
     
      switch (doctype){
         case "recorpic":
-            charpriceA = 1.75;
+            charpriceA *= 1.75;
             break;
         case "mirror":
         case "handwriting":
         case "ppt":
-            charpriceA = 1.10;
+            charpriceA *= 1.10;
             break;
     }
 
     switch(special){
         case "urgent":
-            charpriceB = 1.4;
+            charpriceB *= 1.4;
             break;
         case "lektor":
-            charpriceB = 1.5;
+            charpriceB *= 1.5;
             break;
         case "instant":
-            charpriceB = 1.9;
+            charpriceB *= 1.9;
             break;
     }
     
@@ -81,6 +81,7 @@ function calc(){
     else if(lang1 !== "hun" && lang2 !== "hun" ){
         result += charnum * (4 * charpriceA * charpriceB;
     }
+    
 /*
     switch (doctype){
         case "recorpic":
