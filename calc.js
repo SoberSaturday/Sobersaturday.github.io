@@ -79,7 +79,7 @@ function calc(){
         result += charnum * (3.5 * charpriceA * charpriceB);
     }
     else if(lang1 !== "hun" && lang2 !== "hun" ){
-        result += charnum * (4 * charpriceA * charpriceB;
+        result += charnum * (4 * charpriceA * charpriceB);
     }
     
 /*
