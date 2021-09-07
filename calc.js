@@ -37,26 +37,30 @@ function calc(){
         alert("Válassza ki fordítandó dokumentum nyelvét!");
         return;
     }
-    if(lang2 ==="error2"){
+    else if(lang2 ==="error2"){
         alert("Válassza ki milyen nyelvre szeretné fordítani a dokumentumot!");
         return;
     }
-    if(lang1 === lang2){
+    else if(lang1 === lang2){
        alert("A választott nyelvek megegyeznek, kérjük próbálja újra");
        return;
     }
-    if(charnum == 0){
+    else if(charnum == 0){
         alert("A számításhoz írja be a dokumentum karakterszámát!");
         return;
     }
-    if(lang1==="en" || lang1==="de"){
-        lang1 = "base";
+    switch(lang1){
+        case "en":
+        case "de"
+            lang1 = "base";
     }
-    if(lang2==="en" || lang2==="de"){
-        lang2 = "base";
+    switch(lang2){
+        case "en":
+        case "de"
+            lang2 = "base";
     }
     
-    if(lang1==="hun" && lang2==="base" ){
+    if(lang1 === "hun" && lang2 === "base" ){
         result += charnum * (2*charprice);
     }
     else if(lang1 === "base" && lang2 === "hun" ){
