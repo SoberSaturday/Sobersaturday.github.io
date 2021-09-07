@@ -24,12 +24,12 @@ function calc(){
 
     switch(special){
         case "urgent":
-            charprice = 1.4;
+            charprice *= 1.4;
             break;
         case "lektor":
-            charprice = 1.5;
+            charprice *= 1.5;
         case "instant":
-            charprice = 1.9;
+            charprice *= 1.9;
     }
     
     
