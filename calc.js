@@ -49,19 +49,26 @@ function calc(){
         alert("A számításhoz írja be a dokumentum karakterszámát!");
         return;
     }
-    if(lang1==="hun" && lang2==="base"){
-        result += charnum* (2*charprice);
+    if(lang1==="en" || lang1==="de"){
+        lang1 = "base";
     }
-    if(lang1 === "base" && lang2 === "hun" ){
+    if(lang2==="en" || lang2==="de"){
+        lang2 = "base";
+    }
+    
+    if(lang1==="hun" && lang2==="base" ){
         result += charnum * (2*charprice);
     }
-    if(lang1 === "hun" && lang2 !== "base" ){
+    else if(lang1 === "base" && lang2 === "hun" ){
+        result += charnum * (2*charprice);
+    }
+    else if(lang1 === "hun" && lang2 !== "base" ){
         result += charnum * (3.5*charprice);
     }
-    if(lang1 !== "base" && lang2 === "hun" ){
+    else if(lang1 !== "base" && lang2 === "hun" ){
         result += charnum * (3.5*charprice);
     }
-    if(lang1 !== "hun" && lang2 !== "hun" ){
+    else if(lang1 !== "hun" && lang2 !== "hun" ){
         result += charnum * (4*charprice);
     }
 /*
