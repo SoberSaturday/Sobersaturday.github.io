@@ -8,30 +8,30 @@ function calc(){
     var ft = " Ft"
     var info = "A kalkulátor megközelítő értéket ad! Vegye fel velünk a kapcsolatot, és kérjen pontos árajánlatot!"
     var arajanlat = "Árajánlatot kérek!"
-    var extra1 = 1
-    var extra2 = 1
+    var charpriceA = 1;
+    var charpriceB = 1;
 
     
      switch (doctype){
         case "recorpic":
-            extra1 = 1.75;
+            charpriceA = 1.75;
             break;
         case "mirror":
         case "handwriting":
         case "ppt":
-            extra1 = 1.10;
+            charpriceA = 1.10;
             break;
     }
 
     switch(special){
         case "urgent":
-            extra2 = 1.4;
+            charpriceB = 1.4;
             break;
         case "lektor":
-            extra2 = 1.5;
+            charpriceB = 1.5;
             break;
         case "instant":
-            extra2 = 1.9;
+            charpriceB = 1.9;
             break;
     }
     
@@ -67,19 +67,19 @@ function calc(){
     }
     
     if(lang1 === "hun" && lang2 === "base" ){
-        result += charnum * (2*extra1*extra2);
+        result += charnum * (2 * charpriceA * charpriceB);
     }
     else if(lang1 === "base" && lang2 === "hun" ){
-        result += charnum * (2*extra1*extra2);
+        result += charnum * (2 * charpriceA * charpriceB);
     }
     else if(lang1 === "hun" && lang2 !== "base" ){
-        result += charnum * (3.5*extra1*extra2);
+        result += charnum * (3.5 * charpriceA * charpriceB);
     }
     else if(lang1 !== "base" && lang2 === "hun" ){
-        result += charnum * (3.5*extra1*extra2);
+        result += charnum * (3.5 * charpriceA * charpriceB);
     }
     else if(lang1 !== "hun" && lang2 !== "hun" ){
-        result += charnum * (4*extra1*extra2);
+        result += charnum * (4 * charpriceA * charpriceB;
     }
 /*
     switch (doctype){
