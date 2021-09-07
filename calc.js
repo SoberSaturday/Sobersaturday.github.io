@@ -4,15 +4,17 @@ function calc(){
     var charnum = document.getElementById('charnum').value
     var doctype =  document.getElementById('doctype').value
     var special =  document.getElementById('special').value
+    var charpriceA = 1
+    var charpriceB = 1
     var result = 5000
     var ft = " Ft"
     var info = "A kalkulátor megközelítő értéket ad! Vegye fel velünk a kapcsolatot, és kérjen pontos árajánlatot!"
     var arajanlat = "Árajánlatot kérek!"
-    var charpriceA = 1
-    var charpriceB = 1
+
+
 
     
-     switch (doctype){
+    switch(doctype){
         case "recorpic":
             charpriceA *= 1.75;
             break;
